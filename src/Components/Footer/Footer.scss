@@ -1,0 +1,76 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Gill Sans Nova';
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                padding: 8px;
+                font-size: 18px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .line-decoration {
+        width: 160px;
+        border-bottom: 1px solid black;
+    }
+
+    .text-footer-bloc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        padding-top: 20px;
+
+        h2 {
+            padding-bottom: 10px;
+        }
+
+        p {
+            padding-bottom: 5px;
+
+        }
+        .logo-insta {
+            width: 30px;
+            height: 30px;
+            padding-bottom: 10px;
+        } 
+    }
+
+    .footer-form {
+        height: 20px;
+        padding-bottom: 20px;
+
+        input {
+        height: 15px;
+        }
+
+        button {
+            height: 20px;
+            width: 70px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 2%;
+            font-size: 12px;
+        }
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,35 @@
+@import '../Buttons/Buttons.scss';
+
+.txt-container-home {
+    padding: 100px;
+    font-family: 'Gill Sans Nova';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .paragraph-style {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+
+    .paragraph-style-below { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .button-style--home {
+        @include button-original;
+    }
+
+}

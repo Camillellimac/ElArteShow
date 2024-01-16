@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Gill Sans Nova';
+    src: local('Gill Sans Nova Condensed SemiBold'), local('Gill-Sans-Nova-Condensed-SemiBold'),
+        url('GillSansNova-CnSemiBold.woff2') format('woff2'),
+        url('GillSansNova-CnSemiBold.woff') format('woff'),
+        url('GillSansNova-CnSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
