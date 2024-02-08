@@ -5,8 +5,7 @@ import moon from '../../Assets/icons/moon.png';
 import { useState, useEffect } from 'react';
 import useLocalStorage from 'use-local-storage';
 
-const DayNightToggle = () => {
-    const [nightTheme, setNightTheme] = useState(false);
+const DayNightToggle = ({nightTheme, setNightTheme}) => {
     const [storedTheme, setStoredTheme] = useLocalStorage('theme');
 
     useEffect(() => {

@@ -1,13 +1,15 @@
 import './Header.scss'
-import LoupeIcon from '../../Assets/icons/loupe.png';
-import AccountIcon from '../../Assets/icons/utilisateur.png';
+import LoupeIcon from '../../Assets/icons/loupe.svg';
+import AccountIcon from '../../Assets/icons/utilisateur.svg';
 import LittleHeart from '../../Assets/icons/coeur.png';
 import { Link } from 'react-router-dom';
-import nightTheme from '../../Components/DayNightToggle/DayNightToggle'
 import DayNightToggle from '../../Components/DayNightToggle/DayNightToggle';
+import { useState } from 'react';
 
 
 function Header() {
+    const [nightTheme, setNightTheme] = useState(false);
+
 
     return (
             <header>
@@ -28,16 +30,16 @@ function Header() {
                         </div>
 
                         <div className={`header-right ${nightTheme ? 'night' : ''}`} >
-                            <img src={LoupeIcon} alt="search" className="icon-loop"/>
-                            <img src={AccountIcon} alt="myAccount" className="icon-account"/>
-                            <img src={LittleHeart} alt="littleHeart" className="icon-heart"/>
+                            <img src={LoupeIcon} alt="search" className={`icon-loop ${nightTheme ? 'night' : ''}`}/>
+                            <img src={AccountIcon} alt="my account" className={`icon-account ${nightTheme ? 'night' : ''}`}/>
+                            <img src={LittleHeart} alt="heart" className="icon-heart"/>
 
                         </div>
 
                     </div>
                 
                     <div className="toggle-container">
-                        <DayNightToggle />
+                        <DayNightToggle nightTheme={nightTheme} setNightTheme={setNightTheme} />
                     </div>
 
                 </div>
