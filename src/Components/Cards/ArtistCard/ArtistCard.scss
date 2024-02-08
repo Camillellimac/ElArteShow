@@ -1,0 +1,49 @@
+.line-under-header {
+    width: 80px;
+    background-color: black;    
+    justify-content: center;
+}
+
+.card-bloc--artist {
+    display: flex;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 40px;
+
+    article {
+        display: flex;
+        flex-direction: row;
+
+    .card-item-left--artist {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    
+        h3 {
+            font-size: 28px;
+        }
+    }
+
+    .card-item-right--artist {
+        display: flex;
+
+
+        .artist-text {
+            display: flex;
+            text-align: justify;
+            line-height: 160%;
+
+            padding-left: 20px;
+            padding-right: 20px;
+
+            width: 600px;
+
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+}

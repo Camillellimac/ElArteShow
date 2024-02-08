@@ -3,17 +3,12 @@
     --text-color: #000; 
 }
 
-[data-theme=night]{
+[data-theme="night"] {
     --background: #000;
-    --text-color:  white;
+    --text-color: white;
 }
 
-body, header, footer, a {
-    &.nightTheme {
-        background-color:  var(--background-color-dark);
-        color: var(--text-color-dark);
-    }
-
+body, header, footer {
     background-color: var(--background);
     color: var(--text-color);
 }
@@ -34,4 +29,3 @@ body, header, footer, a {
         transform: rotate(220deg);
     }
 }
-

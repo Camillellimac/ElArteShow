@@ -1,0 +1,30 @@
+
+:root {
+    --background: white;
+    --text-color: #000; 
+}
+
+[data-theme='night']{
+    --background: black;
+    --text-color:  white;
+}
+
+
+.theme-toggle {
+    background-color: var(--background);
+    color: var(--text-color);
+}
+    
+
+.day-night-toggle {
+    position: fixed;
+    top: 8px;
+    left: 10%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}

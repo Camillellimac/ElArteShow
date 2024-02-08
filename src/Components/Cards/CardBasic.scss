@@ -1,4 +1,4 @@
-@import '../Buttons/Buttons.scss';
+
 
 .card-bloc {
     width: 100%;
@@ -51,8 +51,6 @@
                font-size: 15px;
             }
         }
-        .button-homepage-card {
-            @include button-card-bottom;
-        }
+  
     }
 }

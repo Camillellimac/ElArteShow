@@ -3,8 +3,9 @@
     width: 100%;
     height: 400px;
     margin-right: 10px;
-    background-image: url(../../Assets/img/main-home.png);
+    background-image: url(../../Assets/img/main-home-copie.png);
     background-position: center ;
+    object-fit: contain;
 
     display: flex;
     flex-direction: column;
