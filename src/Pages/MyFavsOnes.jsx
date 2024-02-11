@@ -1,14 +1,14 @@
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 
-function ArtLovers() {
+function MyFavsOnes () {
     return (
         <>
-            <Header />
-                <h3>Art Lovers</h3>
-            <Footer />
+            <Header/>
+                <h3>My Favs Ones</h3>
+            <Footer/>
         </>
     )
 }
 
-export default ArtLovers; 
+export default MyFavsOnes;

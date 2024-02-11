@@ -4,6 +4,7 @@ import Artists from './Pages/Artists';
 import ArtistPortfolio from './Pages/ArtistPortfolio';
 import ArtLovers from './Pages/ArtLovers';
 import MyAccount from './Pages/MyAccount';
+import MyFavsOnes from './Pages/MyFavsOnes';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
 
               <Route path="/artlovers" element={<ArtLovers/>}/>
               <Route path="/myaccount" element={<MyAccount/>}/>
+
+              <Route path="/myfavsones" element={<MyFavsOnes/>}/>
+
 
           </Routes>
         </BrowserRouter>

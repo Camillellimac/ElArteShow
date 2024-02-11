@@ -2,7 +2,7 @@
 import './DayNightToggle.scss'; 
 import sun from '../../Assets/icons/sun.png';
 import moon from '../../Assets/icons/moon.png';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import useLocalStorage from 'use-local-storage';
 
 const DayNightToggle = ({nightTheme, setNightTheme}) => {

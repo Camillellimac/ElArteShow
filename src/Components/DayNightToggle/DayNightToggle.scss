@@ -4,7 +4,7 @@
 }
 
 [data-theme="night"] {
-    --background: #000;
+    --background: #18181a;
     --text-color: white;
 }
 
@@ -16,7 +16,7 @@ body, header, footer {
 .day-night-toggle {
     position: absolute;
     top: 42px;
-    left: 50%;
+    left: 49%;
     cursor: pointer;
     transition: transform 0.7s ease-in-out;
 

@@ -1,25 +1,33 @@
 import './Footer.scss';
-import LogoInstagram from '../../Assets/icons/instagram.png'
+import LogoInstagram from '../../Assets/icons/instagram.svg'
+import { useState } from 'react';
+import DayNightToggle from '../DayNightToggle/DayNightToggle';
+import { Link } from 'react-router-dom';
 
 function Footer () {
+    const [nightTheme, setNightTheme] = useState(false);
+
     return (
-        <footer>
+    <footer>
         <div className="footer">
+            <div className="toggle-container">
+                <DayNightToggle setNightTheme={setNightTheme} nightTheme={nightTheme} /> 
+            </div>
 
         <nav>
             <ul>
-                <li>ART LOVERS</li>
-                <li>ARTISTS</li>
-                <li>CONTACT</li>
-                <li>ABOUT</li>
-                <li>ACCOUNT</li>
+                <li><Link to="/" className={`nav-link ${nightTheme ? 'night' : ''}`}>ART LOVERS</Link></li>
+                <li><Link to="/artists" className={`nav-link ${nightTheme ? 'night' : ''}`}>ARTISTS</Link></li>
+                <li><Link to="/contact" className={`nav-link ${nightTheme ? 'night' : ''}`}>CONTACT</Link></li>
+                <li><Link to="/about" className={`nav-link ${nightTheme ? 'night' : ''}`}>ABOUT</Link></li>
+                <li><Link to="/myaccount" className={`nav-link ${nightTheme ? 'night' : ''}`}>ACCOUNT</Link></li>
             </ul>
         </nav>
 
-        <div className="line-decoration"></div>
+       <div className={`line-decoration ${nightTheme ? 'night' : ''}`}></div>
 
         <div className="text-footer-bloc">
-            <img src={LogoInstagram} alt="instagram-logo" class="logo-insta" />
+            <img src={LogoInstagram} alt="instagram-logo" className={`logo-insta ${nightTheme ? 'night' : ''}`}/>
             <h2>SUBSCRIBE</h2>
             <p>Sign up to receive updates on new artwork, products, events, etc. I also blog about surf and art inspiration.</p>
         </div>

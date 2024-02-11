@@ -19,20 +19,20 @@ function Header() {
                             <h3>EL ARTE SHOW</h3>
                         </div>
 
-                        <div class="header-center">
-                            <nav>
-                                <ul>
-                                    <Link to="/"><li><a href="">Home</a></li></Link>
-                                    <Link to="/artlovers/"><li><a href="">Art Lovers</a></li></Link>
-                                    <Link to="/artists"><li><a href="">Artists</a></li></Link>
-                                </ul>
-                            </nav>
+                        <div className="header-center">
+                        <nav>
+                            <ul>
+                                <li><Link to="/artlovers" className={`nav-link ${nightTheme ? 'night' : ''}`}>Lovers</Link></li>
+                                <li><Link to="/artists" className={`nav-link ${nightTheme ? 'night' : ''}`}>Artists</Link></li>
+                                <li><Link to="/" className={`nav-link ${nightTheme ? 'night' : ''}`}>Home</Link></li>
+                            </ul>
+                        </nav>
                         </div>
 
                         <div className={`header-right ${nightTheme ? 'night' : ''}`} >
-                            <img src={LoupeIcon} alt="search" className={`icon-loop ${nightTheme ? 'night' : ''}`}/>
-                            <img src={AccountIcon} alt="my account" className={`icon-account ${nightTheme ? 'night' : ''}`}/>
-                            <img src={LittleHeart} alt="heart" className="icon-heart"/>
+                            <Link to="/searchresult"><img src={LoupeIcon} alt="search" className={`icon-loop ${nightTheme ? 'night' : ''}`}/></Link>
+                            <Link to="/myaccount"><img src={AccountIcon} alt="my account" className={`icon-account ${nightTheme ? 'night' : ''}`}/></Link>
+                            <Link to="/myfavsones"><img src={LittleHeart} alt="heart" className="icon-heart"/></Link>
 
                         </div>
 

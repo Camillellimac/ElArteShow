@@ -5,7 +5,6 @@ import HomeImgBloc from '../Components/HomeImgs/HomeImgBloc';
 import HomeTextBloc from '../Components/HomeTexts/HomeTextBloc';
 import GridGallery from '../Components/GridGallery/GridGallery';
 import CardBasic from '../Components/Cards/CardBasic';
-import DayNightToggle from '../Components/DayNightToggle/DayNightToggle';
 import nightTheme from '../Components/DayNightToggle/DayNightToggle';
 
 

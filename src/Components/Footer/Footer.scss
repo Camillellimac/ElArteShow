@@ -13,8 +13,19 @@
 
             li {
                 list-style: none;
+                text-decoration: none;
                 padding: 8px;
                 font-size: 18px;
+
+                .nav-link {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                &.night {
+                    text-decoration: none;
+                    color: white;
+                }
 
                 &:hover {
                     text-decoration: underline;
@@ -26,6 +37,10 @@
     .line-decoration {
         width: 160px;
         border-bottom: 1px solid black;
+
+        &.night { 
+            border-bottom: 1px solid white;        
+        }
     }
 
     .text-footer-bloc {
@@ -48,6 +63,10 @@
             width: 30px;
             height: 30px;
             padding-bottom: 10px;
+            
+            &.night {
+                filter: invert(1);
+            }
         } 
     }
 
@@ -57,11 +76,15 @@
 
         input {
         height: 15px;
+        margin-right:3px;
+
         }
 
         button {
-            height: 20px;
+            height: 22px;
             width: 70px;
+            margin-left:5px;
+
             background-color: black;
             color: white;
             border: none;

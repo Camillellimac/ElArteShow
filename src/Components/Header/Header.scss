@@ -35,17 +35,16 @@
                 list-style: none;
                 padding: 8px;
 
-                a {
-                    text-decoration: none;
-                    
+                .nav-link {
                     color: black;
-                    
+                    text-decoration: none;
 
                     &.night {
-                        filter: invert(1);
-                        text-decoration: none;
+                        color: white;
+                    }
 
-                        // TROUVER UN MOYEN DE GERER LE DARK/NIGHT AVEC UN HOVER NOIR
+                    &:hover {
+                        text-decoration: underline;
                     }
 
 
@@ -71,6 +70,8 @@
             .icon-loop {
                 width: 18px;
                 height: 18px;
+                display: flex;
+                align-items: center;
 
                 &.night {
                     filter: invert(1);
@@ -81,6 +82,8 @@
                 width: 16px;            
                 height: 16px;     
                 padding-left: 5px;
+                display: flex;
+                align-items: center;
             }
         }
         
