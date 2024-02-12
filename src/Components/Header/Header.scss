@@ -26,10 +26,13 @@
 
         .header-left {
             padding-left: 10px;
+            display: flex;
+            justify-content: flex-start;
         }
 
         .header-center ul {
             display: flex;
+            justify-content: center;
 
             li { 
                 list-style: none;
@@ -55,6 +58,7 @@
         .header-right {
             display: flex;
             align-items: center;
+            justify-content: flex-end;
             padding-right: 10px;
         
             .icon-account {
@@ -72,6 +76,7 @@
                 height: 18px;
                 display: flex;
                 align-items: center;
+                padding-left: 29px;
 
                 &.night {
                     filter: invert(1);

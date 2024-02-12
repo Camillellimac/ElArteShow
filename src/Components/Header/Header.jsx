@@ -22,9 +22,9 @@ function Header() {
                         <div className="header-center">
                         <nav>
                             <ul>
-                                <li><Link to="/artlovers" className={`nav-link ${nightTheme ? 'night' : ''}`}>Lovers</Link></li>
                                 <li><Link to="/artists" className={`nav-link ${nightTheme ? 'night' : ''}`}>Artists</Link></li>
-                                <li><Link to="/" className={`nav-link ${nightTheme ? 'night' : ''}`}>Home</Link></li>
+                                <li><Link to="/" className={`nav-link ${nightTheme ? 'night' : ''}`}>&</Link></li>
+                                <li><Link to="/artlovers" className={`nav-link ${nightTheme ? 'night' : ''}`}>Lovers</Link></li>
                             </ul>
                         </nav>
                         </div>

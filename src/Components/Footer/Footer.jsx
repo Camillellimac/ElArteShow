@@ -16,7 +16,7 @@ function Footer () {
 
         <nav>
             <ul>
-                <li><Link to="/" className={`nav-link ${nightTheme ? 'night' : ''}`}>ART LOVERS</Link></li>
+                <li><Link to="/artlovers" className={`nav-link ${nightTheme ? 'night' : ''}`}>ART LOVERS</Link></li>
                 <li><Link to="/artists" className={`nav-link ${nightTheme ? 'night' : ''}`}>ARTISTS</Link></li>
                 <li><Link to="/contact" className={`nav-link ${nightTheme ? 'night' : ''}`}>CONTACT</Link></li>
                 <li><Link to="/about" className={`nav-link ${nightTheme ? 'night' : ''}`}>ABOUT</Link></li>
