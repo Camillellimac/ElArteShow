@@ -17,7 +17,6 @@ const textContent = {
         button : "SHOP OCEAN ART",
     },
 
-
     randomText : {
         title : "MIX AND MATCH",
         button : "RANDOM ART",
@@ -27,6 +26,12 @@ const textContent = {
         title : "ART + SURF",
         paragraph1 : "Find inspiration and joy in magical everyday moments.",
         button : "READ BLOG",
+    },
+
+    artistsPageIntroText : {
+        title : "OUR ARTIST COMMUNITY",
+        paragraph1 : "THANK YOU FOR JOINING ME ON THIS JOURNEY OF BEAUTY AND DISCOVERY",
+        paragraph2 : "Above image: Growth. For more information regarding the original paintings of The Healing Journey collection, contact me and subscribe to my newsletter (below). Prints now available.",
     }
 };
 

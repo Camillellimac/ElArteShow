@@ -7,11 +7,11 @@ import MyAccount from './Pages/MyAccount';
 import MyFavsOnes from './Pages/MyFavsOnes';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import SignOnForm from './Pages/SignOnForm';
 import CollectionByYear from './Pages/CollectionByYear';
 import CollectionByTheme from './Pages/CollectionByTheme';
 import RandomArt from './Pages/RandomArt';
 import Blog from './Pages/Blog';
+import SignInForm from './Components/Form/SignInForm';
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
               <Route path='/about' element={<About/>}/>
               <Route path='/contact' element={<Contact/>}/>
               <Route path="/myaccount" element={<MyAccount/>}/>
-              <Route path='/signon' element={<SignOnForm/>}/>
+              <Route path='/signin' element={<SignInForm/>}/>
 
               <Route path='/collectionyear202X' element={<CollectionByYear/>}/>
               <Route path='/collectionthemeXXX' element={<CollectionByTheme/>}/>

@@ -14,8 +14,8 @@ import nature2 from '../../Assets/img/random2.png';
 import nature3 from '../../Assets/img/random3.png';
 import nature4 from '../../Assets/img/random4.png';
 
-import artist1 from '../../Assets/img/artist1.png';
-import artist2 from '../../Assets/img/artist2.png';
+import janetmeinke from '../../Assets/img/janetmeinke.png';
+import golsagolchini from '../../Assets/img/golsagolchini.png';
 import artist3 from '../../Assets/img/artist3.png';
 import artist4 from '../../Assets/img/artist4.png';
 import artist5 from '../../Assets/img/artist5.png';
@@ -55,8 +55,8 @@ const galleryContent = {
   ],
 
   artistscover: [
-    { id: 1, src: artist1, alt: "artist1" },
-    { id: 2, src: artist2, alt: "artist2" },
+    { id: 1, src: janetmeinke, alt: "artist1" },
+    { id: 2, src: golsagolchini, alt: "artist2" },
     { id: 3, src: artist3, alt: "artist3" },
     { id: 4, src: artist4, alt: "artist4" },
     { id: 5, src: artist5, alt: "artist5" },

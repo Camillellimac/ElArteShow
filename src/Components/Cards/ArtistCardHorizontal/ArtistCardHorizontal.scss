@@ -1,15 +1,6 @@
-.line-under-header {
-    width: 80px;
-    background-color: black;    
-    justify-content: center;
- } 
- // A MODIFIER/REPAIR
-
-
- // CARD ARTIST //
-
-.card-bloc--artist {
+.card-bloc--artist-horizontal {
     display: flex;
+    flex-direction: column;
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 40px;
@@ -18,7 +9,7 @@
         display: flex;
         flex-direction: row;
 
-        .card-item-left--artist {
+        .card-item-left--artist-horizontal {
             display: flex;
             flex-direction: column;
 
@@ -32,7 +23,7 @@
             }
         }
 
-        .card-item-right--artist {
+        .card-item-right--artist-horizontal {
             display: flex;
 
 
@@ -51,5 +42,3 @@
         }
     }
 }
-
-

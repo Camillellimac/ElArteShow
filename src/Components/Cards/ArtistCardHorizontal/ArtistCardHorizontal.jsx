@@ -1,30 +1,30 @@
-import './ArtistCard.scss';
+import './ArtistCardHorizontal.scss';
 import cardContent from '../CardBasicContent';
 
-
-function ArtistCard({cardArtist}) {
-    const cards = cardContent[cardArtist]
+function ArtistCardHorizontal ({cardArtistName}) {
+    const cards = cardContent[cardArtistName]
 
     return (
         <>
-            <div className='line-under-header'></div>
-            <div className="card-bloc--artist">
+
+            <div className="card-bloc--artist-horizontal">
                 {cards.map((artist, index) => (
                     <article key={index}>
-                        <div className="card-item-left--artist">
+                        <div className="card-item-left--artist-horizontal">
                             <img src={artist.image} alt={artist.title} />
-                            <h3>{artist.title}</h3>
                         </div>
 
-                        <div className="card-item-right--artist">
+                        <div className="card-item-right--artist-horizontal">
+                            <h3>{artist.title}</h3>
                             <p className='artist-text'>{artist.description}</p>
                             </div>    
                     </article>
                 ))}
             </div>
+            
         </>
-
     )
 }
 
-export default ArtistCard;
+export default ArtistCardHorizontal;
+
