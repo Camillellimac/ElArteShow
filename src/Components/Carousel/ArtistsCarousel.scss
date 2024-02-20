@@ -1,0 +1,47 @@
+.carousel {
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  display: flex;
+  min-width: 100%;
+  flex: 0 0 auto;
+}
+
+.carousel-img {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  .artist-text {
+    display: flex;
+    text-align: justify;
+    line-height: 160%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    width: 500px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+}

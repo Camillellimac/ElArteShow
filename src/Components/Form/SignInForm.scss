@@ -1,0 +1,53 @@
+.form-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 60vh; /* Hauteur de la vue */
+  }
+  
+  .form-container > div {
+    text-align: center; /* Centrer le contenu à l'intérieur */
+    background-color: var(--background); /* Exemple de couleur de fond */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+
+  .container {
+    width: 250px;
+  }
+  
+  /* Styles supplémentaires pour le formulaire et les éléments enfants */
+  .form-container form {
+    margin-top: 20px; /* Espacement par rapport au titre */
+  }
+  
+  .form-container label {
+    display: block; /* Affichage en bloc pour occuper toute la largeur */
+    margin-bottom: 5px; /* Espacement entre les labels et les champs */
+  }
+  
+  .form-container input,
+  .form-container button {
+    width: 90%; /* Largeur maximale pour remplir le conteneur */
+    padding: 10px;
+    margin-bottom: 10px; /* Espacement entre les champs */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 4px; /* Coins arrondis */
+  }
+  
+  .form-container button {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    cursor: pointer; /* Curseur de type pointer */
+    transition: background-color 0.3s ease; /* Transition pour un effet de survol */
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3; /* Nouvelle couleur de fond au survol */
+  }
+  
+  .error-message {
+    color: red; /* Couleur rouge pour les messages d'erreur */
+  }
+  
