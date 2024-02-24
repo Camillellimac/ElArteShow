@@ -19,7 +19,7 @@ function Contact () {
                         </div>
                     </div>
 
-                    <div className="form-container">
+                    <div className="contact-form-container">
                         <ContactForm/>
                     </div>
                 </div>

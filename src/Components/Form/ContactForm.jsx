@@ -69,11 +69,14 @@ function ContactForm() {
 
             <button type="submit" style={{
                 backgroundColor: "rgba(0, 0, 0, 0.896)",
-                width: "18vw",
+                width: "14vw",
                 height: "6vh",
                 borderRadius: "10px",
                 border: "none",
                 fontSize: "16px",
+                color: "white",
+                cursor: 'pointer',
+                margin: "2vh 0 0 1.5vw"
             }}>Send Message</button>
 
         </form>
