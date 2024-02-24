@@ -38,6 +38,11 @@ function MenuBurger () {
                             <li><Link to="/contact" className='nav-link'>Contact</Link></li>
                             <li><Link to="/credits" className='nav-link'>Credits</Link></li>
                         </ul>
+
+                        <div className="account-buttons">
+                        <button>Log in</button>
+                        <button>Create account</button>
+                        </div>
                     </nav>
             </div>
         </>
