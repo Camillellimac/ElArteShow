@@ -5,10 +5,10 @@
 
     nav {
         position: absolute; 
-        top: 7vh;
+        top: 10.7vh;
         left: -200px; /* Déplace le menu en dehors de l'écran par défaut */
         width: 200px;
-        height: 100vh;
+        height: 88.2vh;
         background-color: var(--background);
         color: var(--text-color);
         z-index: 1000;
@@ -18,6 +18,7 @@
 
         &.open  {
             left: 0; /* Affiche le menu en le glissant vers la droite */
+            border-right: 1px solid var(--text-color);
         }
 
         li {
@@ -39,7 +40,7 @@
         .menu-title {
             padding-left: 3vw;
             padding-top: 1vh;
-            padding-bottom: 0.5vh;
+            padding-bottom: 1vh;
             font-size: 22px;
         }
 
@@ -53,29 +54,39 @@
         .account-buttons {
             display: flex;
             flex-direction: column;
-            padding-top: 3vh;
+            padding-top: 7vh;
             padding-left: 3vw;
-
+      
             button {
-                width: 12vw;
-                height: 4vh;
-
-                margin-bottom: 2vh;
-
-                background-color: var(--background);
+              width: 12vw;
+              height: 4vh;
+      
+              margin-bottom: 2vh;
+      
+              background-color: var(--background);
+              color: var(--text-color);
+      
+              border: 1px solid var(--text-color);
+              border-radius: 20px;
+      
+              cursor: pointer;
+      
+              &:hover {
+                background-color: var(--text-color);
+                color: var(--background);
+                transition: 0.5s ease-in-out;
+              }
+      
+              &:hover a {
+                color: var(--background);
+                transition: 0.5s ease-in-out;
+              }
+      
+              a {
+                text-decoration: none;
                 color: var(--text-color);
-
-                border: 1px solid var(--text-color);
-                border-radius: 20px;
-
-                cursor: pointer;
-
-                &:hover {
-                    background-color: var(--text-color);
-                    color: var(--background);
-                    transition: 0.5s ease-in-out;
-                }
+              }
             }
+          }
         }
-    }
-}
+      }

@@ -32,7 +32,7 @@ function MenuBurger () {
                           
 
                         <ul>
-                        <li className="menu-title">More</li>
+                        <li className="menu-title">& More</li>
                             <li><Link to="/blog" className='nav-link'>Blog</Link></li>
                             <li><Link to="/about" className='nav-link'>About</Link></li>
                             <li><Link to="/contact" className='nav-link'>Contact</Link></li>
@@ -40,8 +40,8 @@ function MenuBurger () {
                         </ul>
 
                         <div className="account-buttons">
-                        <button>Log in</button>
-                        <button>Create account</button>
+                        <button><Link to='/myaccount'>Log in</Link></button>
+                        <button><Link to='/myaccount'>Create account</Link></button>
                         </div>
                     </nav>
             </div>
