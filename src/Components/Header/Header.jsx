@@ -16,14 +16,13 @@ function Header() {
                 <div className="first">
                     <div className="header-container">
                         <div className="header-left">
-                            <h3>EL ARTE SHOW</h3>
+                            <h3><Link to="/" className={`nav-link ${nightTheme ? 'night' : ''}`}>EL ARTE SHOW</Link></h3>
                         </div>
 
                         <div className="header-center">
                         <nav>
                             <ul>
                                 <li><Link to="/artists" className={`nav-link ${nightTheme ? 'night' : ''}`}>Artists</Link></li>
-                                <li><Link to="/" className={`nav-link ${nightTheme ? 'night' : ''}`}>&</Link></li>
                                 <li><Link to="/artlovers" className={`nav-link ${nightTheme ? 'night' : ''}`}>Lovers</Link></li>
                             </ul>
                         </nav>

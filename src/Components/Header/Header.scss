@@ -16,7 +16,6 @@
     .header-container {
         width: 100%;
         min-height: 55px;
-
         
         display: flex;
         justify-content: space-between;
@@ -28,6 +27,11 @@
             padding-left: 10px;
             display: flex;
             justify-content: flex-start;
+
+            h3 a {
+                color: var(--text-color);
+                text-decoration: none;
+            }
         }
 
         .header-center ul {
