@@ -20,7 +20,7 @@ function SignInForm () {
                     .email('Invalid email address')
                     .required(''),
                 password: Yup.string()                        
-                    .min(6, 'Password must be at least 6 characters')
+                    .min(8, 'Password must be at least 8 characters')
                     .required(''),
                 })}
                 onSubmit={(values, { setSubmitting }) => {

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import './HomeImgBloc.scss';
-import backgroundImage from '../../Assets/img/main-home-copie.png'; // Importez l'image
+import backgroundImage from '../../Assets/img/main-home-copie.png'; 
 
 function HomeImgBloc() {
     const randomWords = ['LOVE', 'PEACE', 'ART', 'WILD', 'A NEW VISION', 'DREAM', 'WISDOM', 'GREATNESS', 'FREEDOM', 'REFLECTION', 'FULFILLMENT', 'JOY', 'HAPPINESS'];

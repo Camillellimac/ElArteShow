@@ -12,6 +12,8 @@ import CollectionByTheme from './Pages/CollectionByTheme';
 import RandomArt from './Pages/RandomArt';
 import Blog from './Pages/Blog';
 import SignInForm from './Components/Form/SignInForm';
+import './Styles/tailwind.css';
+
 
 
 function App() {
@@ -34,7 +36,7 @@ function App() {
               <Route path="/myaccount" element={<MyAccount/>}/>
               <Route path='/signin' element={<SignInForm/>}/>
 
-              <Route path='/collectionyear202X' element={<CollectionByYear/>}/>
+              <Route path='/collectionyear' element={<CollectionByYear/>}/>
               <Route path='/collectionthemeXXX' element={<CollectionByTheme/>}/>
               <Route path="/myfavsones" element={<MyFavsOnes/>}/>
               <Route path='/blog' element={<Blog/>}/>
