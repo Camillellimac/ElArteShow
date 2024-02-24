@@ -1,11 +1,11 @@
 .menu-burger {
-    cursor: pointer;
     padding-top: 0.4vh;
     padding-right: 1vw;
+    position: relative;
 
     nav {
-        position: fixed;
-        top: 0;
+        position: absolute; 
+        top: 7vh;
         left: -300px; /* Déplace le menu en dehors de l'écran par défaut */
         width: 300px;
         height: 100vh;
@@ -13,14 +13,40 @@
         color: var(--text-color);
         z-index: 1000;
         transition: left 0.3s ease-in-out; /* Transition pour l'effet de glissement */
+        user-select: none;
    
 
-    &.open  {
-        left: 0; /* Affiche le menu en le glissant vers la droite */
-    }
+        &.open  {
+            left: 0; /* Affiche le menu en le glissant vers la droite */
+        }
 
-    a {
-        text-decoration: none;
-        color: var(--text-color);
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: var(--text-color);
+                padding-left: 3vw;
+                font-size: 18px;
+
+                &:hover {
+                    text-decoration: underline;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+        .menu-title {
+            padding-left: 3vw;
+            padding-top: 1vh;
+            padding-bottom: 0.5vh;
+            font-size: 22px;
+        }
+
+        .dotted-line {
+            width: 7vw;
+            border: 1px dotted var(--text-color);
+            margin-left: 5vh;
+            margin-top: 2vh;
+        }
     }
-}}
+}
