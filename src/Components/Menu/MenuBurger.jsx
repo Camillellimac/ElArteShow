@@ -24,7 +24,7 @@ function MenuBurger () {
                         <ul>
                             <li><Link to="/" className='nav-link'>Home</Link></li>
                             <li><Link to="/artists" className='nav-link'>Artists</Link></li>
-                            <li><Link to="/collectionyear" className='nav-link'>Collections</Link></li>
+                            <li><Link to="/collection" className='nav-link'>Collections</Link></li>
                             <li><Link to="/random" className='nav-link'>Discover</Link></li>
 
                             <div className="dotted-line"></div>
