@@ -1,5 +1,6 @@
 import Checkbox from "../Components/Checkbox/Checkbox";
 import Footer from "../Components/Footer/Footer";
+import GridGalleryM from "../Components/GridGallery/GridGalleryM";
 import Header from "../Components/Header/Header";
 import './Collection.scss'
 
@@ -34,7 +35,7 @@ function Collection () {
                     </div>
 
                     <div className="card-items-right">
-                        
+                        <GridGalleryM galleryName='botanic'/>
                     </div>
                 </div>
 
