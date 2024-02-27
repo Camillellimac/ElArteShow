@@ -37,7 +37,7 @@ function Collection() {
                 <div className="checkbox-left">
                     <Checkbox onChange={handleCheckboxChange} />
                 </div>
-                <div className="card-items-right">
+                <div className="card-items-right-m">
                     <GridGalleryM selectedThemes={selectedThemes} />
                 </div>
             </div>

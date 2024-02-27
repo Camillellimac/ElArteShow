@@ -1,6 +1,6 @@
 .collection-page-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     max-width: 100vw;
     max-height: 100vh;
     padding: 4vh 0 4vh 0;
@@ -16,7 +16,6 @@
             font-size: 42px;
             max-width: 27vw;
             padding-bottom: 4vh;
-
         }
 
         p {
@@ -24,7 +23,6 @@
             max-width: 27vw;
             padding-bottom: 4vh;
             text-align: justify;
-
         }
     }
 
@@ -38,11 +36,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
             max-width: 240px;
             margin-top: 4vh;
             padding: 4vh 2vw 4vh 2vw;
-
             background-color: rgba(191, 188, 188, 0.162);
             border-radius: 20px;
             border: 1px solid rgba(128, 128, 128, 0.344);
@@ -74,7 +70,6 @@
                 &:hover {
                     color: var(--text-color);
                     background-color: var(--background);
-
                 }
             }
         }
@@ -84,15 +79,22 @@
 .collection-item-container {
     display: flex;
     justify-content: space-evenly;
+    max-width: 100vw;
+    width: 100%; 
+
+    padding-left: 2vw;
+    padding-bottom: 10vh;
 
     .checkbox-left {
         margin: 10vh 0 10vh 3vw;
-
         padding: 2vh;
-
-
-        background-color: rgba(191, 188, 188, 0.162) ;
+        background-color: rgba(191, 188, 188, 0.162);
         border-radius: 20px;
         border: 1px solid rgba(128, 128, 128, 0.344);
+        min-height: 82vh;
+    }
+    .card-items-right-m {
+        width: calc(100% - 16vw); 
+        margin-top: 10vh;
     }
 }

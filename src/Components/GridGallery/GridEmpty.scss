@@ -1,0 +1,26 @@
+.gallery-bloc-m-empty {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 3vw 0 3vw;
+
+    .gallery-item-m-empty {
+        width: 150px;
+        height: 150px;
+        padding-bottom: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+        border: 1px solid var(--text-color);
+
+        .item-m-empty {
+            width: 150px;
+            height: 150px;
+
+        }
+    }
+}
