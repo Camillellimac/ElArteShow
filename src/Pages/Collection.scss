@@ -87,11 +87,12 @@
 
     .checkbox-left {
         margin: 10vh 0 10vh 3vw;
-        padding: 2vh;
+        padding: 3vh;
         background-color: rgba(191, 188, 188, 0.162);
         border-radius: 20px;
         border: 1px solid rgba(128, 128, 128, 0.344);
-        min-height: 82vh;
+        min-height: 79.3vh;
+        min-width: 9vw;
     }
     .card-items-right-m {
         width: calc(100% - 16vw); 
