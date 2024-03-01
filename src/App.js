@@ -13,7 +13,6 @@ import RandomArt from './Pages/RandomArt';
 import Blog from './Pages/Blog';
 import SignInForm from './Components/Form/SignInForm';
 import './Styles/tailwind.css';
-import Checkbox from './Components/Checkbox/Checkbox';
 import Collection from './Pages/Collection';
 
 
@@ -39,9 +38,9 @@ function App() {
               <Route path='/signin' element={<SignInForm/>}/>
 
               <Route path='/collection' element={<Collection/>}/>
-              <Route path='/collectionyear' element={<CollectionByYear/>}/>
-              <Route path='/collectionthemeXXX' element={<CollectionByTheme/>}/>
-              
+              <Route path='/collectionbyyear' element={<CollectionByYear/>}/>
+              <Route path='/collectionbytheme' element={<CollectionByTheme/>}/>
+
               <Route path="/myfavsones" element={<MyFavsOnes/>}/>
               <Route path='/blog' element={<Blog/>}/>
 

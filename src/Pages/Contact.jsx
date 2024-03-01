@@ -1,7 +1,6 @@
 import Footer from "../Components/Footer/Footer";
 import ContactForm from "../Components/Form/ContactForm";
 import Header from "../Components/Header/Header";
-import HomeImgBloc from "../Components/HomeImgs/HomeImgBloc";
 import './Contact.scss'
 
 function Contact () {

@@ -4,6 +4,7 @@ import Footer from "../Components/Footer/Footer";
 import GridGalleryM from "../Components/GridGallery/GridGalleryM";
 import Header from "../Components/Header/Header";
 import './Collection.scss';
+import { Link } from 'react-router-dom';
 
 function Collection() {
     const [selectedThemes, setSelectedThemes] = useState([]);
@@ -36,9 +37,9 @@ function Collection() {
           <div className="collection-card-buttons">
             <div className="buttons-card">
               <h4>All collections</h4>
-              <button>Year</button>
+              <Link to="/collectionbyyear"><button>Year</button></Link>
               <p>by</p>
-              <button>Theme</button>
+              <Link to="/collectionbytheme"><button>Theme</button></Link>
             </div>
           </div>
         </div>
@@ -56,3 +57,5 @@ function Collection() {
   }
   
   export default Collection;
+
+

@@ -32,21 +32,20 @@ const galleryContent = {
     { id: 2, src: botanic2, alt: "botanic2", theme: "botanic", year: "2022"},
     { id: 3, src: botanic3, alt: "botanic3", theme: "botanic", year: "2023"},
     { id: 4, src: botanic4, alt: "botanic4", theme: "botanic", year: "2021"},
-    { id: 1, src: botanic1, alt: "botanic1", theme: "botanic", year: "2024"},
-    { id: 2, src: botanic2, alt: "botanic2", theme: "botanic", year: "2023"},
-    { id: 3, src: botanic3, alt: "botanic3", theme: "botanic", year: "2022"},
-    { id: 4, src: botanic4, alt: "botanic4", theme: "botanic", year: "2021"},
-    { id: 1, src: botanic1, alt: "botanic1", theme: "botanic", year: "2024"},
-    { id: 2, src: botanic2, alt: "botanic2", theme: "botanic", year: "2023"},
-    { id: 3, src: botanic3, alt: "botanic3", theme: "botanic", year: "2022"},
-    { id: 4, src: botanic4, alt: "botanic4", theme: "botanic", year: "2022"},
-  ],
+    ],
+
   ocean: [
     { id: 1, src: ocean1, alt: "ocean1", theme: "ocean", year: "2024"},
     { id: 2, src: ocean2, alt: "ocean2", theme: "ocean", year: "2023"},
     { id: 3, src: ocean3, alt: "ocean3", theme: "ocean", year: "2022"},
     { id: 4, src: ocean4, alt: "ocean4", theme: "ocean", year: "2021"},
+    { id: 5, src: ocean1, alt: "ocean1", theme: "ocean", year: "2024"},
+    { id: 6, src: ocean2, alt: "ocean2", theme: "ocean", year: "2023"},
+    { id: 7, src: ocean3, alt: "ocean3", theme: "ocean", year: "2022"},
+    { id: 8, src: ocean4, alt: "ocean4", theme: "ocean", year: "2021"},
+  
   ],
+
   nature: [
     { id: 1, src: nature1, alt: "nature1", theme: "nature", year: "2024"},
     { id: 2, src: nature2, alt: "nature2", theme: "nature", year: "2023"},
