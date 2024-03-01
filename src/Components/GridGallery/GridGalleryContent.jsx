@@ -1,4 +1,3 @@
-
 import botanic1 from '../../Assets/img/botanic1.png';
 import botanic2 from '../../Assets/img/botanic2.png';
 import botanic3 from '../../Assets/img/botanic3.png';
@@ -21,10 +20,6 @@ import artist4 from '../../Assets/img/artist4.png';
 import artist5 from '../../Assets/img/artist5.png';
 import artist6 from '../../Assets/img/artist6.png';
 import artist7 from '../../Assets/img/artist7.png';
-
-
-
-
 
 const galleryContent = {
   botanic: [
@@ -65,3 +60,9 @@ const galleryContent = {
 };
 
 export default galleryContent;
+
+
+export const getImagesByYear = (year) => {
+  return Object.values(galleryContent).flatMap(gallery => gallery.filter(image => image.year === year));
+};
+

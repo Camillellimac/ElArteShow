@@ -38,8 +38,8 @@ function App() {
               <Route path='/signin' element={<SignInForm/>}/>
 
               <Route path='/collection' element={<Collection/>}/>
-              <Route path='/collectionbyyear' element={<CollectionByYear/>}/>
-              <Route path='/collectionbytheme' element={<CollectionByTheme/>}/>
+              <Route path='/collection/byyear' element={<CollectionByYear/>}/>
+              <Route path='/collection/bytheme' element={<CollectionByTheme/>}/>
 
               <Route path="/myfavsones" element={<MyFavsOnes/>}/>
               <Route path='/blog' element={<Blog/>}/>
