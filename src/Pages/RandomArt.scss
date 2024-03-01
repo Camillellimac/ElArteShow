@@ -1,0 +1,89 @@
+.randomart-first-container {
+    background-color: rgba(191, 188, 188, 0.162);
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.344);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 55vw;
+    padding: 7vh;
+  
+    h3 {
+      font-size: 38px;
+      max-width: 27vw;
+      padding-bottom: 4vh;
+    }
+  
+    .randomart-card-buttons {
+      button {
+        color: var(--background);
+        background-color: var(--text-color);
+        width: 14vw;
+        height: 6vh;
+        border-radius: 10px;
+        border: 0.5px solid var(--text-color);
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 20px;
+  
+        &:hover {
+          color: var(--text-color);
+          background-color: var(--background);
+        }
+      }
+    }
+  }
+  
+  .randomart-first-container.hidden {
+    display: none;
+  }
+  
+  .randomart-text-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    padding: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .randomart-art-item-container.loading .random-art-description-container,
+  .randomart-art-item-container.loading img {
+    display: none;
+  }
+  
+  .randomart-art-item-container.loading .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner-container {
+    display: none;
+  }
+  
+  .randomart-art-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  
+    img {
+      width: 350px;
+      height: 350px;
+    }
+  
+    .random-art-description-container {
+      h3 {
+        font-size: 24px;
+        padding-top: 20px;
+      }
+  
+      p {
+        font-size: 18px;
+        padding-top: 10px;
+      }
+    }
+  }
+  

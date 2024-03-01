@@ -14,8 +14,7 @@ import Blog from './Pages/Blog';
 import SignInForm from './Components/Form/SignInForm';
 import './Styles/tailwind.css';
 import Collection from './Pages/Collection';
-
-
+import Credits from './Pages/Credits';
 
 function App() {
   return (
@@ -34,6 +33,7 @@ function App() {
 
               <Route path='/about' element={<About/>}/>
               <Route path='/contact' element={<Contact/>}/>
+              <Route path='/credits' element={<Credits/>}/>
               <Route path="/myaccount" element={<MyAccount/>}/>
               <Route path='/signin' element={<SignInForm/>}/>
 
@@ -43,8 +43,6 @@ function App() {
 
               <Route path="/myfavsones" element={<MyFavsOnes/>}/>
               <Route path='/blog' element={<Blog/>}/>
-
-
 
           </Routes>
         </BrowserRouter>
