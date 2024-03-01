@@ -10,7 +10,7 @@ function CollectionByTheme () {
 
                 <div className="collectiontheme-page-container">
                     <div className="collectiontheme-text-container">
-                        <h3>Check our insane collections by theme</h3>
+                        <h3>Check our insanes collections <br></br>by <span className="theme-word-theme">theme</span></h3>
                     </div>
 
                     <div className="collectiontheme-card-buttons">

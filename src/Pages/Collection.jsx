@@ -37,9 +37,9 @@ function Collection() {
           <div className="collection-card-buttons">
             <div className="buttons-card">
               <h4>All collections</h4>
-              <Link to="/collectionbyyear"><button>Year</button></Link>
+              <Link to="/collection/byyear"><button>Year</button></Link>
               <p>by</p>
-              <Link to="/collectionbytheme"><button>Theme</button></Link>
+              <Link to="/collection/bytheme"><button>Theme</button></Link>
             </div>
           </div>
         </div>
