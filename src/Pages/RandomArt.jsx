@@ -11,6 +11,13 @@ function RandomArt() {
   const [showFirstContainer, setShowFirstContainer] = useState(true);
   const [showButton, setShowButton] = useState(false);
 
+  const resetState = () => {
+    setShowFirstContainer(true);
+    setLoading(false);
+    setRandomArt({});
+    setShowButton(false);
+  };
+
   const getRandomArt = () => {
     setShowFirstContainer(false);
     setLoading(true);
@@ -70,17 +77,26 @@ function RandomArt() {
               <div className="random-art-description-container">
                 {randomArt.artist && <h3>{randomArt.artist}</h3>}
                 {randomArt.name && <p>{randomArt.name}</p>}
-                <div className='randomart-buttons-bottom'>
-                {showButton && (
-                  <button className={`button-add-to-favs ${showButton ? '' : 'hidden'}`}>
-                    ADD TO MY FAVS
-                  </button>
-                )}
-                {showButton && (
-                  <button className={`button-another-ride ${showButton ? '' : 'hidden'}`}>
-                    ANOTHER RIDE
-                  </button>
-                )}
+                <div className="randomart-buttons-bottom">
+                  {showButton && (
+                    <button
+                      className={`button-add-to-favs ${
+                        showButton ? '' : 'hidden'
+                      }`}
+                    >
+                      ADD TO MY FAVS
+                    </button>
+                  )}
+                  {showButton && (
+                    <button
+                      className={`button-another-ride ${
+                        showButton ? '' : 'hidden'
+                      }`}
+                      onClick={resetState}
+                    >
+                      ANOTHER RIDE
+                    </button>
+                  )}
                 </div>
               </div>
             </>
