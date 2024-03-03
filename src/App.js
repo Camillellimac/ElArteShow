@@ -15,6 +15,7 @@ import SignInForm from './Components/Form/SignInForm';
 import './Styles/tailwind.css';
 import Collection from './Pages/Collection';
 import Credits from './Pages/Credits';
+import CreateAnAccount from './Pages/CreateAnAccount';
 
 function App() {
   return (
@@ -34,8 +35,10 @@ function App() {
               <Route path='/about' element={<About/>}/>
               <Route path='/contact' element={<Contact/>}/>
               <Route path='/credits' element={<Credits/>}/>
+
               <Route path="/myaccount" element={<MyAccount/>}/>
               <Route path='/signin' element={<SignInForm/>}/>
+              <Route path='/createanaccount' element={<CreateAnAccount/>}/>
 
               <Route path='/collection' element={<Collection/>}/>
               <Route path='/collection/byyear' element={<CollectionByYear/>}/>

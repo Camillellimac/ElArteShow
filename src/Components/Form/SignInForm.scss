@@ -50,4 +50,13 @@
   .error-message {
     color: red; /* Couleur rouge pour les messages d'erreur */
   }
+
+  .link-create-account {
+    text-decoration: none;
+    color: var(--text-color);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   

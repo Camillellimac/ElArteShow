@@ -1,6 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import './SignInForm.scss';
+import { Link } from 'react-router-dom';
 
 function SignInForm () {
     return (
@@ -42,7 +43,7 @@ function SignInForm () {
                     </div>
                     <button type="submit">Submit</button>
 
-                    <p>Create an account</p>
+                    <p><Link to='/createanaccount'className='link-create-account'>Create an account</Link></p>
                 </Form>
 
             </Formik>

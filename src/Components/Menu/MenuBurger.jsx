@@ -41,7 +41,7 @@ function MenuBurger () {
 
                         <div className="account-buttons">
                         <button><Link to='/myaccount'>Log in</Link></button>
-                        <button><Link to='/myaccount'>Create account</Link></button>
+                        <button><Link to='/createanaccount'>Create account</Link></button>
                         </div>
                     </nav>
             </div>

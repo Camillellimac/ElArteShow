@@ -1,11 +1,11 @@
 .menu-burger {
-    margin-top: 2.4vh;
+    margin-top: 1.8vh;
     padding-right: 1vw;
-    position: relative;
+    position: fixed;
 
     nav {
         position: absolute; 
-        top: 10.7vh;
+        top: 10.164vh;
         left: -200px; /* Déplace le menu en dehors de l'écran par défaut */
         width: 200px;
         height: 88.2vh;

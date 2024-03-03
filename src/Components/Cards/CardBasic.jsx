@@ -22,7 +22,7 @@ function CardBasic({cardSubject}) {
 
                     {card.buttonText && (
                         <div className="button-homepage-card">
-                            <p>{card.buttonText}</p>
+                            <button>{card.buttonText}</button>
                         </div>
                     )}
             </article>
