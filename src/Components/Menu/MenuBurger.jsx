@@ -18,7 +18,7 @@ function MenuBurger () {
         <>
             <div className='menu-burger'>
                 <button style={{border:"none"}} onClick={toggleMenu}>
-                    <span className="material-symbols-outlined">{icon}</span>
+                    <span className="material-symbols-outlined" style={{position: "relative", top: "0.75vh"}}>{icon}</span>
                 </button>
                     <nav className={`menu ${isMenuOpen ? 'open' : ''}`}>
                         <ul>

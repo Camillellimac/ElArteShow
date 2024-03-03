@@ -5,6 +5,7 @@
     align-items: center;
 
     padding: 5vh 8vw 2vh 8vw;
+    font-family: 'Gill Sans Nova';
 
     .blog-article-container {
         display: flex;
@@ -16,6 +17,7 @@
         border-radius: 20px;
 
         padding: 2vw;
+        margin-bottom: 15vh;
 
         .blog-article-content {
             display: flex;
@@ -24,14 +26,13 @@
             align-items: center;
             padding: 1vw;
 
-
             h3 {
-                font-size: 32px;
+                font-size: 26px;
 
             }
 
-            .blog-intro-p {
-                font-size: 16px;
+            .blog-date {
+                font-size: 12px;
                 padding-bottom: 2vh;
 
             }
@@ -45,7 +46,7 @@
             }
 
             .blog-text-content {
-                font-size: 14px;
+                font-size: 16px;
                 text-align: justify;
                 padding: 1vh 3vw 1vh 3vw;
                 margin-top: 3vh;

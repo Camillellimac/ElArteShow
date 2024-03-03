@@ -1,27 +1,33 @@
+import React from 'react';
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import './Blog.scss';
-import blogImg from '../Assets/img/blogarticle1.png'; 
+import BlogContent from "../Components/BlogContent/BlogContent"; 
 
+function Blog() {
+    const { blogImg, blogText } = BlogContent;
+    const blogTextArray = Object.values(blogText);
 
-function Blog () {
     return (
         <>
-            <Header/>
-                <div className="blog-page-container">
-                    <div className="blog-article-container">
+            <Header />
+            <div className="blog-page-container">
+                {blogTextArray.map((article, index) => (
+                    <div className="blog-article-container" key={index}>
                         <article className="blog-article-content">
-                            <h3>Title</h3>
-                            <p className="blog-intro-p">Intro</p>
-                            <img src={blogImg} alt="">
-                            </img>
-                            <p className="blog-text-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat deserunt exercitationem minus tempora rerum cumque iusto architecto officiis, cupiditate, debitis recusandae corporis sequi beatae, quasi nisi delectus porro aspernatur dolorum?</p>
+                            <h3>{article.title}</h3>
+                            <p className="blog-date">{article.date}</p>
+                            <img src={blogImg.blogImgContent[index].src} alt={blogImg.blogImgContent[index].alt} />
+                            <p className="blog-text-content">{article.textContent1}</p>
+                            <p className="blog-text-content">{article.textContent2}</p>
+                            <p className="blog-text-content">{article.textContent3}</p>
                         </article>
                     </div>
-                </div>
-            <Footer/>
+                ))}
+            </div>
+            <Footer />
         </>
-    )
+    );
 }
 
-export default Blog; 
+export default Blog;
